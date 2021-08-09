@@ -1,0 +1,142 @@
+#tweet{
+    display: inline-block;
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    font-size: 12px;
+    line-height: 16px;
+    border-width: 1px;
+    border-color: #eee #ddd #bbb;
+    margin: 10px 5px;
+    padding: 16px 16px 16px 16px;
+    max-width: 468px;
+}
+
+.chiffre{
+    font-weight: bold;
+
+}
+
+.grey{
+    color: gray;
+}
+
+#pp{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#message{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#pseudo{
+    display: inline-block;
+    margin-left: 7px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#at{
+    display: inline-block;
+    font-size: 11px;
+    color: gray;
+}
+
+#mid{
+    border-top: 2px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 16px 16px 16px 16px;
+    text-align: center;
+}
+
+#comment{
+    display: inline-block;
+    padding-right: 20px;
+}
+
+#like{
+    display: inline-block;
+    padding-right: 20px;
+}
+
+#rt{
+    display: inline-block;
+    padding-right: 20px;
+}
+
+#img{
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+#commentimg{
+    display: inline-block;
+    width: 40px;
+    height: auto;
+    margin-right: 40px;
+}
+
+.rtimg{
+    display: inline-block;
+    width: 40px;
+    height: auto;
+    /* margin-right: 40px; */
+    z-index: 10;
+}
+
+#shareimg{
+    display: inline-block;
+    width: 30px;
+    height: auto;
+}
+
+.rtimg:hover{
+    cursor: pointer;
+}
+
+#at:hover,
+#at:focus {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.like-btn-svg {
+    display: inline-block;
+    background-position: center;
+    width: 80px;
+    height: 80px;
+    bottom: 0; /* temp value */
+    background: url("./web_heart_animation.png") no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    margin-top: -30px;
+    margin-bottom: -10px;
+    margin-right: 20px;
+    clip-path: circle(35% at 60% 60%);
+  }
+  
+  .animate {
+    transition: background 1s steps(28);
+    animation: fave-like-btn-svg 1s steps(28);
+    background-position: -2800px 0;
+  }
+  
+  @keyframes fave-like-btn-svg {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -2800px 0;
+    }
+  }
